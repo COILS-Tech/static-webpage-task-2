@@ -34,3 +34,30 @@ button {
 button:hover {
 	background-color: #3ea1d3d8;
 }
+
+
+.navigation {
+	background-color: #57ac8d;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	display: flex; /* Add this line */
+	justify-content: center; /* Add this line */
+}
+.navigation a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+.navigation a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-emphasis: center;
+	text-decoration: solid;
+	text-shadow: 0cap;
+}
