@@ -19,6 +19,22 @@
         <button id="visit-hng">Visit COILS</button>
     </div>
     <script src="/js/scripts.js"></script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2022 My Website. All rights reserved.</p>
+            <p>Page last updated on: <span id="current-date"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        const currentMonth = currentDate.getMonth() + 1;
+        const currentDay = currentDate.getDate();
+        const formattedDate = `${currentMonth}/${currentDay}/${currentYear}`;
+        document.getElementById("current-date").textContent = formattedDate;
+    </script>
 </body>
 
 </html>
