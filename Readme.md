@@ -1,3 +1,4 @@
+##Group Task
 Goal:
 To run this static webpage on an Azure VM and serve the webpage using a webserver like Nginx or Apache:
 
@@ -57,6 +58,7 @@ That's it! Your static webpage should now be running on your Azure VM using Dock
 
 
 TASK 3
-Deploy this App in a Web App
+Deploy this App in a Web App (Individual Task)
 
 - Setup a Web App using ARM template and deploy the above web page inside it and ensure that the Web Page is available.
+- Modify the index.html file located in `/html/index.html` with your details: Name, username and email on your own named branch and deploy that to your web app.
