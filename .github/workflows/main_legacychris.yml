@@ -27,14 +27,19 @@ jobs:
         run: |
           # Create a build directory
           mkdir -p build
-          # Copy all static files to build directory
-          cp -r html/* build/
+          # Copy the main index.html file
+          cp index.html build/
+          # Copy CSS and JS directories
           cp -r css build/
           cp -r js build/
           # Copy any additional files
           if [ -f "Dockerfile" ]; then cp Dockerfile build/; fi
           if [ -f "nginx.conf" ]; then cp nginx.conf build/; fi
+          if [ -f "web.config" ]; then cp web.config build/; fi
           if [ -f "Readme.md" ]; then cp Readme.md build/; fi
+          # List contents to verify
+          echo "Build directory contents:"
+          ls -la build/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
